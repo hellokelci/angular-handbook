@@ -1,0 +1,16 @@
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    border: 1px solid magenta;
+}
+
+nav ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
