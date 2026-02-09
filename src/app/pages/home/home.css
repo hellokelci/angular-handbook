@@ -10,3 +10,72 @@
     position: absolute;
     object-fit: cover;
 }
+
+.container-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Zalando Sans", sans-serif;
+    color: #fff;
+}
+
+.container-hero h1 {
+    font-weight: 300;
+
+    width: 55%;
+    text-align: center;
+    margin: 1rem auto 4rem;
+}
+
+.group-video-items {
+    display: flex;
+    gap: 3rem;
+    margin: 0 0 4rem;
+}
+
+.group-video-items img {
+    width: 550px;
+    height: auto;
+
+    flex-shrink: 1;
+    user-select: none;
+
+    cursor: no-drop;
+}
+
+.group-video-items p {
+    font-family: "B612 Mono", monospace;
+    color: #DEDEDE;
+
+    line-height: 1.8rem;
+    flex-shrink: 1;
+    font-size: 18px;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: never;
+}
+
+.group-buttons {
+    display: flex;
+    /* border: 3px solid red; */
+    gap: 20px;
+}
+
+.group-buttons button {
+    border: none;
+    border-radius: 2px;
+    padding: 0.7rem 3rem;
+
+    cursor: no-drop;
+}
+
+.button-getting-started {
+    background-color: #0F0F11;
+    color: #fff;
+}
+
+.button-learn-more {
+    background-color: #fff;
+    color: #0F0F11;
+}   
