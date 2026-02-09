@@ -1,10 +1,10 @@
 <nav class="navbar">
-  <ul>
-    <li class=""><a routerLink="/">&#60;ab&#62;</a></li>
-    <li class=""><a routerLink="/">Home</a></li>
-    <li class=""><a routerLink="/init">Init</a></li>
-    <li class=""><a routerLink="/concepts">Concepts</a></li>
-    <li class=""><a routerLink="/dictionary">Dictionary</a></li>
-    <li class=""><a routerLink="/faqs">FAQs</a></li>
+  <ul [class.white-nav]="isWhiteMode">
+    <li class="logo-link"><a routerLink="/">ahb</a></li>
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/init">Init</a></li>
+    <li><a routerLink="/concepts">Concepts</a></li>
+    <li><a routerLink="/dictionary">Dictionary</a></li>
+    <li><a routerLink="/faqs">FAQs</a></li>
   </ul>
 </nav>
