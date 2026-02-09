@@ -12,19 +12,19 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node 🟢
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
 
-      - name: Install and Build 🔧
+      - name: Install Dependencies and Build
         run: |
           npm ci
-          ng build --configuration production --base-href /repo-name/ 
+          npx ng build --configuration production --base-href /angular-handbook/ 
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
