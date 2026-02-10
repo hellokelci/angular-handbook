@@ -1,24 +1,4 @@
-@font-face {
-    font-family: 'Zalando Sans Expanded';
-    font-weight: 200 900;
-    font-style: normal;
-    font-display: swap;
-    src: url('/angular-handbook/fonts/ZalandoSansExpanded.ttf');
-}
-
-@font-face {
-    font-family: 'Zalando Sans';
-    font-weight: 200 900;
-    font-style: normal;
-    font-display: swap;
-    src: url('/angular-handbook/fonts/ZalandoSans.ttf');
-}
-
-@font-face {
-    font-family: 'B612 Mono';
-    font-style: normal;
-    src: url('/angular-handbook/fonts/B612Mono-Regular.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
 html {
     overscroll-behavior: none;
@@ -27,12 +7,37 @@ html {
 html, body {
     padding: 0;
     margin: 0;
-    
     scroll-behavior: smooth;
+    font-family: 'B612', sans-serif;
 }
 
 body {
-    /* border: 2px solid yellowgreen; */
     margin: auto;
-    height: 120vh;
+    min-height: 100vh;
+    max-width: 1536px;
+}
+
+.display-warning {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background-color: #1a1a1a;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .display-app {
+        display: none;
+    }
+
+    .display-warning {
+        display: flex;
+    }
+    
+    body {
+        max-width: 100%;
+    }
 }

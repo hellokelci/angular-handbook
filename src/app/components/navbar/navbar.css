@@ -5,6 +5,7 @@
 
 nav {
     border: 1px solid #ffffff5f;
+    /* border: 3px solid orange; */
     position: sticky;
     top: 10px;
     width: 70%;
@@ -59,8 +60,8 @@ nav ul {
 }
 
 nav ul li {
-    font-family: "Andale Mono", monospace;
-    font-weight: 200;
+    font-family: 'B612 Mono', monospace;
+    /* font-weight: 200; */
 
     font-size: 0.8rem;
 }

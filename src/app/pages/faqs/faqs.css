@@ -1,3 +1,18 @@
 .container-app {
     background-color: magenta!important;
+    min-height: 100vh;
+}
+
+.img-faqs {
+    width: 100%;
+    height: auto;
+
+    display: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    position: absolute;
+    /* object-fit: cover; */
+    height: 650px;
 }
