@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-init',
   imports: [],
   templateUrl: './init.html',
-  styleUrl: './init.css',
+  styleUrls: ['./init.css', '../../app.css']
 })
 export class Init {
 

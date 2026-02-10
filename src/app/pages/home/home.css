@@ -177,6 +177,6 @@
     border-radius: 5px 90px;
 }
 
-nav {
-    color: red!important;
+.style-active-link {
+    color: #fff;
 }

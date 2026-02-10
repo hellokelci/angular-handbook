@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-concepts',
   imports: [],
   templateUrl: './concepts.html',
-  styleUrl: './concepts.css',
+  styleUrls: ['./concepts.css', '../../app.css']
 })
 export class Concepts {
 

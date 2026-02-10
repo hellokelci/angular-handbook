@@ -1,10 +1,13 @@
-<nav class="navbar">
-  <ul [class.white-nav]="isWhiteMode">
-    <li class="logo-link"><a href="https://hellokelci.github.io" target="_blank">km</a>/<a href="https://github.com/hellokelci" target="_blank">ahb</a></li>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/init">Init</a></li>
-    <li><a routerLink="/concepts">Concepts</a></li>
-    <li><a routerLink="/dictionary">Dictionary</a></li>
-    <li><a routerLink="/faqs">FAQs</a></li>
+<nav class="navbar" [class.white-mode]="isWhiteMode">
+  <ul>
+    <li class="logo-link">
+      <a class="km" href="https://hellokelci.github.io" target="_blank">km</a>/<a class="ahb" href="https://github.com/hellokelci" target="_blank">ahb</a>
+    </li>
+    <li><a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+    <li><a routerLink="/init" routerLinkActive="active-link">Init</a></li>
+    <li><a routerLink="/concepts" routerLinkActive="active-link">Concepts</a></li>
+    <!-- <li><a routerLink="/dictionary">Dictionary</a></li> -->
+    <!-- <li><a routerLink="/faqs">FAQs</a></li> -->
+    <li><a href="https://www.github.com/hellokelci/angular-handbook" target="_blank">GitHub</a></li>
   </ul>
 </nav>

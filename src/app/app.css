@@ -9,3 +9,37 @@
     height: fit-content;
     /* min-height: 100vh; */
 }
+
+.layout-grid {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+
+    height: 80vh;
+    margin: 0 auto 10rem;
+}
+
+.layout-grid div {
+    padding: 1rem;
+    font-family: "Zalando Sans", sans-serif;
+}
+
+.layout-grid .column-left {
+    grid-area: 1 / 1 / 2 / 2;
+
+    background-color: blue;
+}
+
+.layout-grid .column-right {
+    grid-area: 1 / 2 / 2 / 3;
+
+    background-color: skyblue;
+}
+
+.pages-title {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 4rem;
+    margin: 0;
+}

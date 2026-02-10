@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { Router,RouterLink, NavigationEnd } from '@angular/router';
+import { Router, RouterLink, NavigationEnd, RouterLinkActive } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'navbar',
-  imports: [RouterLink],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
