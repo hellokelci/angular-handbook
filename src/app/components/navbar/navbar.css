@@ -9,7 +9,7 @@ nav {
     position: sticky;
     top: 10px;
     width: 70%;
-    margin: 0 auto 4rem;
+    margin: 0 auto 2rem;
     user-select: none;
 
     padding: 0 1rem;
@@ -85,11 +85,16 @@ nav ul li a {
 }
 
 .logo-link .km:hover, .logo-link .ahb:hover {
-    color: #CF03A2;
+    color: #53D0FA;
     transition: color 0.3s ease;    
 }
 
 nav ul li a.active-link {
-  color: #CF03A2; /* Or any color you prefer */
+  color: #F5AD01; /* Or any color you prefer */
   /* font-weight: bold; */
+}
+
+nav ul li a:hover {
+    color: #53D0FA;
+    transition: color 0.3s ease;
 }

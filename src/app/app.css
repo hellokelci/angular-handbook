@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
 
-    width: 80%;
+    width: 72%;
     margin: auto;
     /* border: 3px solid rgb(162, 102, 246); */
 
@@ -12,13 +12,13 @@
 
 .layout-grid {
     display: grid;
-    grid-template-columns: 0.4fr 1fr;
+    grid-template-columns: minmax(0, 0.3fr) 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 15px;
     grid-row-gap: 0px;
 
-    height: 80vh;
-    margin: 0 auto 10rem;
+    min-height: 60vh;
+    margin: 0 auto 5rem;
 }
 
 .layout-grid div {
@@ -26,16 +26,63 @@
     font-family: "Zalando Sans", sans-serif;
 }
 
-.layout-grid .column-left {
+.layout-grid .column-left-nav {
     grid-area: 1 / 1 / 2 / 2;
 
-    background-color: blue;
+    /* background-color: blue; */
+    border-radius: 10px;
+    padding: 0;
+    position: sticky;
+    top: 80px;
+    align-self: start; /* Add this! */
+    height: fit-content; /* Add this to ensure it doesn't stretch */
+
+    font-family: "B612", sans-serif;
+}
+
+.layout-grid .column-left-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    /* border: 1px solid red; */
+    text-align: right;
+}
+
+.column-left-nav ul li {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+
+    overflow-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+
+    border-radius: 1px 10px 1px 10px;
+
+    transition: 0.3s ease-in-out;
+
+}
+
+.column-left-nav ul li:hover {
+    background-color: #F5AD01;
+    color: #FFF;
+
+}
+
+.column-left-nav ul li a {
+    text-decoration: none;
+    color: #0F0F11;
 }
 
 .layout-grid .column-right {
     grid-area: 1 / 2 / 2 / 3;
 
     background-color: skyblue;
+    
+    /* overflow-y: auto; */
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
 }
 
 .pages-title {
