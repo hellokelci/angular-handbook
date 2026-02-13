@@ -50,7 +50,7 @@
 
 .column-left-nav ul li {
     display: block;
-    color: black;
+    color: #0F0F11;
     padding: 8px 16px;
     text-decoration: none;
 
@@ -89,4 +89,35 @@
     font-family: "Zalando Sans Expanded", sans-serif;
     font-size: 4rem;
     margin: 0;
+}
+
+.display-warning {
+    display: none;
+    height: 90vh;
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    color: #0F0F11;
+}
+
+@media (max-width: 1024px) {
+    .display-app {
+        display: none;
+    }
+
+    .display-warning {
+        display: flex;
+        padding: 20px;
+        font-size: 3vw;
+        /* border: 3px solid orange; */
+
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        vertical-align: center;
+    }
+    
+    body {
+        max-width: 100%;
+    }
 }
